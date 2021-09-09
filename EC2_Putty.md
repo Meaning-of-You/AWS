@@ -53,3 +53,51 @@ https://www.puttygen.com/download-putty
 4. 확장자를 .ppk로 지정 후 저장
 
 ![image-20210909222034439](EC2_Putty.assets/image-20210909222034439.png)
+
+
+
+### PuTTY 설정하기
+
+1. 탄력적 IP 주소 확인
+
+- 앞서 할당 받은 IP 주소 복사
+
+![image-20210909220109286](EC2_Putty.assets/image-20210909220109286.png)
+
+2. PuTTY에 IP address 설정
+
+![image-20210909220219264](EC2_Putty.assets/image-20210909220219264.png)
+
+3. Connection > SSH > Auth 설정
+
+- 앞서 생성한 .ppk 파일 업로드
+
+![image-20210909222118745](EC2_Putty.assets/image-20210909222118745.png)
+
+4. Session > Saved Sessions 이름 지정 후 저장
+
+![image-20210909222311937](EC2_Putty.assets/image-20210909222311937.png)
+
+5. 저장한 세션 선택 후 Open 클릭
+
+![image-20210909222427768](EC2_Putty.assets/image-20210909222427768.png)
+
+6. Accept 선택
+
+![image-20210909222507701](EC2_Putty.assets/image-20210909222507701.png)
+
+7. login 아이디 입력
+
+- AMI에 따라 기본 계정이 다름
+
+  https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/managing-users.html
+
+  - Amazon Linux 2 또는 Amazon Linux AMI의 경우:  `ec2-user`
+  - CentOS AMI의 경우: `centos`
+  - Debian AMI의 경우:`admin`
+  - Fedora AMI의 경우: `ec2-user` 또는 `fedora`
+  - RHEL AMI의 경우: `ec2-user` 또는 `root`
+  - SUSE AMI의 경우: `ec2-user` 또는 `root`
+  - Ubuntu AMI의 경우: `ubuntu`
+
+![image-20210909222650017](EC2_Putty.assets/image-20210909222650017.png)
