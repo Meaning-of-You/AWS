@@ -6,6 +6,14 @@
 
 ### 인스턴스 생성
 
+https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+
+##### EC2
+
+안전하고 크기 조정이 가능한 컴퓨팅 용량을 클라우드에서 제공하는 웹 서비스
+
+##### 인스턴스 생성하기
+
 1. EC2 서비스 검색
 
 ![image-20210906103406984](EC2.assets/image-20210906103406984.png)
@@ -55,4 +63,44 @@
 9. 인스턴스 생성 확인
 
 ![image-20210909213609752](EC2.assets/image-20210909213609752.png)
+
+
+
+### 탄력적 IP 생성
+
+https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
+
+##### 탄력적 IP
+
+동적 클라우드 컴퓨팅을 위해 고안된 정적 IPv4 주소
+
+##### 주의사항
+
+- 탄력적 IP 주소의 효율적인 사용을 위해 탄력적 IP 주소가 실행 중인 인스턴스와 연결되어 있지 않거나 중지된 인스턴스 또는 연결되지 않은 네트워크 인터페이스와 연결된 경우 소액의 시간당 요금이 부과
+
+##### 탄력적 IP 생성하기
+
+1. 네트워크 및 보안 > 탄력적 IP 주소
+
+![image-20210909213814215](EC2.assets/image-20210909213814215.png)
+
+2. 탄력적 IP 주소 할당 선택
+
+![image-20210909213946493](EC2.assets/image-20210909213946493.png)
+
+3. 탄력적 IP 주소 할당
+
+![image-20210909214209131](EC2.assets/image-20210909214209131.png)
+
+4. 탄력적 IP 주소 연결
+
+- 인스턴스에 이전에 생성한 인스턴스 연결
+
+![image-20210909214303144](EC2.assets/image-20210909214303144.png)
+
+![image-20210909214354827](EC2.assets/image-20210909214354827.png)
+
+5. 탄력적 IP 주소 연결 확인
+
+![image-20210909214507911](EC2.assets/image-20210909214507911.png)
 
