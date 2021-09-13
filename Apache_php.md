@@ -22,7 +22,7 @@ sudo apt-get install -y php5.6
 php -version
 ```
 
-![image-20210913224218919](Apache_php.assets/image-20210913224218919.png)
+![image-20210913231203027](Apache_php.assets/image-20210913231203027.png)
 
 3. index.php 파일 작성
 
@@ -38,7 +38,7 @@ sudo nano /home/project/index.php
 cd /home/project
 ```
 
-![image-20210913224618435](Apache_php.assets/image-20210913224618435.png)
+![image-20210913231229501](Apache_php.assets/image-20210913231229501.png)
 
 - 파일 삭제
   - index.html 파일이 보호되어 있다고 나타남
@@ -47,13 +47,13 @@ cd /home/project
 rm index.html
 ```
 
-![image-20210913224846633](Apache_php.assets/image-20210913224846633.png)
+![image-20210913231247041](Apache_php.assets/image-20210913231247041.png)
 
 ```shell
 sudo rm index.html
 ```
 
-![image-20210913224953541](Apache_php.assets/image-20210913224953541.png)
+![image-20210913231300322](Apache_php.assets/image-20210913231300322.png)
 
 5. 브라우저 실행
 
