@@ -95,4 +95,3 @@ sudo apachectl restart
 3. 브라우저 확인
 
 ![image-20210913223735538](Apache.assets/image-20210913223735538.png)
-
