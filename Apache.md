@@ -18,7 +18,7 @@
 sudo apt-get install apache2
 ```
 
-![image-20210913221601830](Apache.assets/image-20210913221601830.png)
+![image-20210913231337547](Apache.assets/image-20210913231337547.png)
 
 2. 웹 페이지 구동 확인하기
 
@@ -52,7 +52,7 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 sudo mkdir /home/project
 ```
 
-![image-20210913222627650](Apache.assets/image-20210913222627650.png)
+![image-20210913231415024](Apache.assets/image-20210913231415024.png)
 
 7. index.html 파일 생성
 
