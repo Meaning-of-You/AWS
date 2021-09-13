@@ -14,7 +14,7 @@ sudo service mysql restart
 sudo apachectl restart
 ```
 
-![image-20210913225323295](MySQL_php.assets/image-20210913225323295.png)
+![image-20210913231536584](MySQL_php.assets/image-20210913231536584.png)
 
 2. 설치 패키지 확인
 
@@ -44,7 +44,7 @@ sudo nano index.php
 
 
 
-### 오류 해결
+### 오류 해결 1번 방법 (실패)
 
 1. MySQL 접속
 
@@ -62,3 +62,54 @@ alter user root@localhost identified with mysql_native_password by '비밀번호
 
 ![image-20210913230913704](MySQL_php.assets/image-20210913230913704.png)
 
+- 오류 해결 X
+
+3. 인증 방식 재수정
+
+```shell
+alter user min@'%' identified with mysql_native_password by '비밀번호';
+```
+
+![image-20210913231840371](MySQL_php.assets/image-20210913231840371.png)
+
+4. 인증방식 확인
+
+```shell
+SELECT user, host, plugin FROM mysql.user;
+```
+
+![image-20210913231911486](MySQL_php.assets/image-20210913231911486.png)
+
+- 오류 해결 X
+
+
+
+### 오류 해결 2번 방법 (성공)
+
+1. min 유저로 접속
+
+```shell
+sudo mysql -u min -p
+```
+
+![image-20210913232835470](MySQL_php.assets/image-20210913232835470.png)
+
+2. 생성되어 있는 데이터베이스 확인
+
+```shell
+show databases;
+```
+
+![image-20210913232814231](MySQL_php.assets/image-20210913232814231.png)
+
+3. index.php 코드 수정
+
+```shell
+sudo nano index.php
+```
+
+![image-20210913233221503](MySQL_php.assets/image-20210913233221503.png)
+
+4. 브라우저 확인
+
+![image-20210913233155366](MySQL_php.assets/image-20210913233155366.png)
