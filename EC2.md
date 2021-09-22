@@ -104,3 +104,20 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/elastic-ip-addresses-e
 
 ![image-20210909214507911](EC2.assets/image-20210909214507911.png)
 
+
+
+### 인스턴스 중지
+
+- 사용을 다 한 이후에는 인스턴스를 중지 시켜줌
+- 중지했다가 새로 시작하면 퍼블릭 IP 주소가 변경됨
+
+![image-20210922232533270](EC2.assets/image-20210922232533270.png)
+
+
+
+### 인스턴스 삭제
+
+- 인스턴스가 실행중이라면 중지 후 삭제
+
+![image-20210922232617004](EC2.assets/image-20210922232617004.png)
+
