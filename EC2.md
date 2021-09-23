@@ -118,6 +118,8 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/elastic-ip-addresses-e
 ### 인스턴스 삭제
 
 - 인스턴스가 실행중이라면 중지 후 삭제
+- 인스턴스 중지와 인스턴스 종료 헷갈리기 X
+  - 인스턴스 종료를 누르면 인스턴스가 아예 없어짐
 
 ![image-20210922232617004](EC2.assets/image-20210922232617004.png)
 
